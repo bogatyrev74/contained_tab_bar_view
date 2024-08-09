@@ -162,6 +162,7 @@ class ContainedTabBarViewState extends State<ContainedTabBarView>
         child: Padding(
           padding: widget.tabBarProperties.padding,
           child: TabBar(
+            dividerColor: Colors.transparent,
             controller: _controller,
             tabs: widget.tabs,
             indicator: widget.tabBarProperties.indicator,
@@ -260,3 +261,4 @@ class ContainedTabBarViewState extends State<ContainedTabBarView>
     super.dispose();
   }
 }
+
